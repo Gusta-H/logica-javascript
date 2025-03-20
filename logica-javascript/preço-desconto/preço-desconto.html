@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        
+        let preco = parseFloat(prompt("Qual o valor do produto?"))
+        let quantidade = parseInt(prompt("Quantos produtos você comprou?"))
+
+        var desconto = preco * 10 / 100
+        var valor_desconto = (preco * quantidade) - desconto
+        var valor_final = preco * quantidade
+
+
+        if(quantidade >= 10)
+        document.write("O valor a ser pago é: " + valor_desconto)
+        else
+         document.write("O valor a ser pago é: " + valor_final)
+
+    </script>
+
+</body>
+</html>

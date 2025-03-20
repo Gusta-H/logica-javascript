@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+        let idade = parseFloat(prompt("Qual sua idade? "))
+        let sexo = prompt("Digite seu sexo usando( F para feminino, e M para Masculino)")
+
+        if (idade < 60 && sexo == "F") {
+            document.write("Você não pode se aposentar")
+        } else if (idade >= 60 && sexo == "F") {
+            document.write("Pode se aposentar")
+        } else if (idade < 65 && sexo == "M") {
+            document.write("Não pode se aposentar")
+        } else if (idade >= 65 && sexo == "M") {
+            document.write("Você pode se aposentar")
+        } else {
+            document.write("Verifique se você digitou corretamente o sexo F ou M")
+        }
+    </script>
+    
+</body>
+</html>
